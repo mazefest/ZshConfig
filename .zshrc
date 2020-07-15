@@ -1,13 +1,15 @@
 #Aliases
+alias gi='git add --interactive'
 alias gs='git status'
 alias gr='git reflog'
+alias grlog='git reflog'
 alias gbin='git add bin/*'
-alias d='diff'
+alias d='git diff'
 alias gp='git add -p'
 alias gc='git commit -m '
 alias gpom='git push origin master'
 alias conz='vim ~/zsh/.zshrc'
-alias fittocsv='java -jar ~/documents/stryd/fIT/FitSDKRelease_20.96.00/java/FitCSVTool.jar -b' 
+alias ftc='java -jar ~/documents/stryd/fIT/FitSDKRelease_20.96.00/java/FitCSVTool.jar -b' 
 alias upz='source ~/zsh/.zshrc'
 alias ga='git add -A'
 
@@ -16,6 +18,11 @@ alias ga='git add -A'
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/mazefest/.oh-my-zsh"
+
+# when one file isn't being tracked use the following 
+# git rm -r --cached .
+# git add .
+# git commit -m "fixed untracked files"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
